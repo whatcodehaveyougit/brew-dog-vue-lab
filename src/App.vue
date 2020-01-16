@@ -8,6 +8,7 @@
 
 <script>
 import BeersList from './components/BeersList.vue';
+import BeerListItem from './components/BeerListItem.vue';
 
 export default {
   name: 'app',
@@ -22,7 +23,8 @@ export default {
     .then(beers => this.beers = beers )
   },
   components: {
-    "beers-list": BeersList
+    "beers-list": BeersList,
+    "beers-list-item": BeerListItem
   }
 
 
