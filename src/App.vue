@@ -1,12 +1,13 @@
 <template>
   <div id="app">
 
-<p>jfjfj</p>
+    <h1>BrewDog Beers</h1>
+      <beers-list :beers='beers'></beers-list>
   </div>
 </template>
 
 <script>
-
+import BeersList from './components/BeersList.vue';
 
 export default {
   name: 'app',
@@ -19,6 +20,9 @@ export default {
     fetch('https://api.punkapi.com/v2/beers')
     .then(response => response.json())
     .then(beers => this.beers = beers )
+  },
+  components: {
+    "beers-list": BeersList
   }
 
 
