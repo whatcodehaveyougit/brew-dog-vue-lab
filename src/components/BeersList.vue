@@ -3,7 +3,6 @@
     <section class="beer-section">
       <ul>
         <beer-list-item v-for="(beer, index) in beers" :beer="beer" :key="index">
-
         </beer-list-item>
         <!-- <p>Test to show</p> -->
       </ul>
